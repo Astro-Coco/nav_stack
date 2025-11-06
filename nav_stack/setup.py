@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='root',
-    maintainer_email='root@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='Colin Rousseau',
+    maintainer_email='colin.rousseau@etud.polymtl.ca',
+    description='Navigation stack for aeac 2026',
+    license='Apache License 2.0',
     extras_require={
         'test': [
             'pytest',
@@ -24,6 +24,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'lap = nav_stack.lap:main',
+            'scan = nav_stack.scan:main',
         ],
     },
 )
